@@ -14,35 +14,38 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('assets/dist/css/adminlte.min.css') }}">
 
+    @stack('style')
     @livewireStyles
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
     <div class="wrapper">
         @include('inc.navbar')
-    </div>
 
-    @include('inc.sidebar')
+        @include('inc.sidebar')
 
-    <div class="content-wrapper">
-        @yield('content')
-    </div>
-
-    <footer class="main-footer">
-        <div class="float-right d-none d-sm-block">
-            <b>Version</b> 3.2.0
+        <div class="content-wrapper">
+            @yield('content')
         </div>
-        <strong>Copyright &copy; 2023 Template <a href="https://adminlte.io">AdminLTE.io
-                3.2.0</a>.</strong> All rights
-        reserved.
-    </footer>
 
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-    </aside>
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.2.0
+            </div>
+            <strong>Copyright &copy; 2023 Template <a href="https://adminlte.io">AdminLTE.io
+                    3.2.0</a>.</strong> All rights
+            reserved.
+        </footer>
+
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+    </div>
 
     <!-- jQuery -->
     <script src="{{ asset('assets/plugins/jquery/jquery.min.js') }}"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="{{ asset('assets/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
     <!-- Bootstrap 4 -->
     <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- AdminLTE App -->
