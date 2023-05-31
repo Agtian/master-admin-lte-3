@@ -673,6 +673,14 @@
                     </a>
                 </li>
 
+                <li class="nav-header">MASTER</li>
+                <li class="nav-item">
+                    <a href="{{ url('dashboard/admin/user') }}" class="nav-link">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p class="text">Users</p>
+                    </a>
+                </li>
+
                 <br>
                 <li class="nav-item">
                     <a href="{{ route('logout') }}" class="nav-link"
