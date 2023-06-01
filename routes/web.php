@@ -35,5 +35,6 @@ Route::prefix('dashboard/admin')->middleware(['auth', 'isAdmin'])->group(functio
         Route::post('/user', 'store');
         Route::get('/user/{user}/edit', 'edit');
         Route::put('/user/{user}', 'update');
+        Route::get('/user/{user}/delete', 'destroy');
     });
 });
